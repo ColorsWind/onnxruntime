@@ -17,6 +17,7 @@ void CUDAGraph::SetStream(cudaStream_t stream) {
 }
 
 void CUDAGraph::CaptureBegin() {
+  ORT_NOT_IMPLEMENTED("SHOULD NOT USE CAPTURE");
   ORT_ENFORCE(!has_graph_exec_,
               "This cuda graph has already captured a graph. "
               "Create a new instance to capture a new graph.");
